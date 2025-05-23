@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /* background: aquamarine; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}

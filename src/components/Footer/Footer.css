@@ -1,0 +1,68 @@
+.footer {
+  width: 100vw;
+  background-color: #0170b9;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0px;
+  text-align: start;
+  color: white;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.footer ul {
+  list-style: none;
+  text-align: start;
+  padding: 0%;
+}
+
+.footer ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 10px 20px;
+  margin: 5px 0px;
+}
+
+.socialMediaList ul {
+  display: flex;
+  gap: 10px;
+  padding: 0px;
+  width: 30%;
+  justify-content: space-around;
+  background: #7fffd438;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.socialMediaList ul li {
+  display: flex;
+  background: aliceblue;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 100%;
+}
+
+/* .socialMediaList > ul > li:hover {
+    background-color: #15a072;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2) 2s;
+    transition: background-color 2s, scale 3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.23);
+  }
+   */
+.socialMediaList ul li a {
+  color: #213547;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+}

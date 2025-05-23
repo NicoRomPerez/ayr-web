@@ -1,0 +1,74 @@
+.container .heronico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  height: 70vh;
+  padding: 50px;
+  margin-top: 120px;
+  background-image: linear-gradient(
+      210deg,
+      #1e87f0 0%,
+      #88888852 50%,
+      #0170b9 100%
+    ),
+    url(/src/assets/banner2.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+}
+
+.container .heronico h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  width: 70%;
+  color: aliceblue;
+}
+
+.container .heronico b {
+  color: #1e87f0;
+}
+
+.container .heronicoimg img {
+  width: 25%;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  border-radius: 50%;
+}
+
+.container .heronico p {
+  margin-bottom: 30px;
+  color: aliceblue;
+  width: 70%;
+}
+
+.container .heronico a {
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.container .heronico a:hover {
+  filter: drop-shadow(0 0 2em #01c38d);
+}
+
+@media screen and (max-width: 780px) {
+  .container .heronico {
+    /* width: 100%; */
+    padding: 70px 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .container .heronico h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  .container .heronico p {
+    width: 100%;
+  }
+}

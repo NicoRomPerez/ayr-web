@@ -1,0 +1,38 @@
+.tape {
+  width: 90%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+
+  &::scrollbar-button(*) {
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+}
+
+.tape img:hover {
+  scale: 1.2;
+}
+
+&::-webkit-scrollbar-button {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 780px) {
+  .section {
+    padding: 50px 0px;
+  }
+
+  .section .text {
+    /* background-color: aqua */
+    width: 100%;
+  }
+}

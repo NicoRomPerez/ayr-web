@@ -1,0 +1,255 @@
+.opa {
+  background-color: whitesmoke;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 50px;
+  width: 100%;
+
+  /* background-color: aquamarine; */
+  margin: 30px 30px;
+}
+
+.section .text {
+  /* border: solid red 1px; */
+  flex-wrap: wrap;
+  width: 45%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.section .image {
+  /* border: solid red 1px; */
+  /* background-color: aquamarine; */
+  flex-wrap: wrap;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.section div img {
+  /* border: solid red 1px; */
+  /* Copy code to element you want to animate */
+
+  /* animation: customAni2 3s ease 0s 1 normal none; */
+  border-radius: 10%;
+}
+
+.section div ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* list-style-image: url(../../assets/dot.svg); */
+}
+
+.section .text ul li {
+  width: 300px;
+}
+
+.section .text li::marker {
+  color: #61dafbaa;
+}
+
+.row section {
+  margin: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row section figure {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+}
+
+.row section:hover figure img {
+  animation: customAni 3s ease 0s 1 normal none;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.row section figure figcaption {
+  width: 200px;
+}
+
+.row section figure figcaption p {
+  line-height: 1.5;
+}
+
+.propaganda {
+  width: 100%;
+  background-image: url(../../assets/bannerMidea.webp);
+  height: 85vh;
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.propaganda .text {
+  /* background-color: red; */
+  background: #213547;
+  position: relative;
+  left: 70px;
+  top: 100px;
+  /* height: 100px; */
+  padding: 20px;
+  overflow: hidden;
+  height: 100px;
+  flex-direction: row;
+  transition: 3s;
+}
+
+.propaganda .text h1 {
+  margin: 0px;
+  /* display: none; */
+}
+
+.propaganda .text p {
+  color: aliceblue;
+  /* display: none; */
+}
+
+.propaganda .text:hover {
+  height: auto;
+  /* transition-duration: 2s; */
+}
+
+@media screen and (max-width: 780px) {
+  .section .text {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .section .image {
+    width: 100%;
+    /* background-color: brown; */
+  }
+
+  .section .image img {
+    width: 100%;
+    /* background-color: brown; */
+  }
+
+  .section .text ul {
+    /* background-color: red; */
+    flex-wrap: nowrap;
+    height: auto;
+    padding: 0px 20px;
+  }
+
+  .row section {
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@keyframes customAni1 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes customAni2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes customAni {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}

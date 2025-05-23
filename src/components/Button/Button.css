@@ -1,0 +1,69 @@
+.buttonPrimary {
+  /* Copy code to element you want to animate */
+  animation: customAni 3s ease 0s infinite normal none;
+  font-size: 14px;
+  background: #1e87f0;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+  fill: var(--e-global-color-2653451c);
+  border-style: solid #1e87f0;
+  margin: 5px 10px;
+  max-width: fit-content;
+}
+
+.buttonSecondary {
+  font-size: 14px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+  fill: var(--e-global-color-2653451c);
+  border: solid #1e87f0 2px;
+  margin: 5px 10px;
+}
+
+.starburst {
+  width: 200px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(
+    98.5% 62.16%,
+    87.07% 71.78%,
+    84.23% 86.45%,
+    69.41% 88.37%,
+    59.09% 99.17%,
+    45.59% 92.77%,
+    31.06% 96.28%,
+    23.16% 83.6%,
+    9.05% 78.69%,
+    9.26% 63.75%,
+    0.04% 52%,
+    8.29% 39.54%,
+    6.89% 24.67%,
+    20.56% 18.65%,
+    27.43% 5.39%,
+    42.18% 7.72%,
+    55.13% 0.26%,
+    66.29% 10.2%,
+    81.21% 10.93%,
+    85.22% 25.33%,
+    97.37% 34.01%,
+    92.97% 48.28%
+  );
+}
+
+@keyframes customAni {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
