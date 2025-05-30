@@ -1,11 +1,11 @@
 // import lg from "../assets/LG2.png";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, Children } from "react";
 import "../Carousel/Carousel.css";
 import image1 from "../../assets/bannerMidea.webp";
 import image2 from "../../assets/Whirlpool-banner01.jpg";
 import image3 from "../../assets/panasonicBanner.jpg";
 
-export default function Carousel(second) {
+export default function Carousel({ props, children }) {
   const elementsw = useRef([]);
 
   useEffect(() => {
@@ -52,21 +52,11 @@ export default function Carousel(second) {
         {"<"}
       </a>
 
-      <div class="prueba">
-        <div class="principal ojo" id="one">
-          <img src={image1}></img>
-        </div>
-        <div class="secundario" id="two">
-          <img src={image2}></img>
-        </div>
-        <div class="secundario" id="three">
-          <img src={image3}></img>
-        </div>
-      </div>
+      {children}
 
       <a
         onClick={() => {
-          alert("hola");
+          changue();
         }}
       >
         {">"}

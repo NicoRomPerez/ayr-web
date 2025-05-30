@@ -2,13 +2,13 @@ import Hero from "../components/Hero/Hero";
 import Section from "../components/Section/Section";
 import RootLayout from "../layouts/rootLayout";
 
-export default function About(second) {
+export default function Products(second) {
   return (
     <RootLayout>
       <Section>
         <Hero></Hero>
       </Section>
-      <h1>NOSOTROS</h1>
+      <h1>PRODUCTOS</h1>
     </RootLayout>
   );
 }

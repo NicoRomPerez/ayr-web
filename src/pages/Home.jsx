@@ -11,10 +11,15 @@ import { RiMotorbikeFill } from "react-icons/ri";
 import { GiAutoRepair } from "react-icons/gi";
 import { MdHomeRepairService } from "react-icons/md";
 import { BsBuildingFillAdd } from "react-icons/bs";
+import image1 from "../assets/bannerMidea.webp";
+import image2 from "../assets/Whirlpool-banner01.jpg";
+import image3 from "../assets/panasonicBanner.jpg";
 
 import Tape from "../components/Tape/Tape";
 import Carousel from "../components/Carousel/Carousel";
 import Map from "../components/Map/Map";
+import ProductsCarousel from "../components/Carousel/ProductsCarousel";
+import ProductList from "../components/ProductList/ProductList";
 
 export default function Home() {
   return (
@@ -29,7 +34,19 @@ export default function Home() {
             <h2>NUESTROS PROVEEDORES</h2>
           </div>
           <Tape />
-          <Carousel></Carousel>
+          <Carousel>
+            <div class="prueba">
+              <div class="principal ojo" id="one">
+                <img src={image1}></img>
+              </div>
+              <div class="secundario" id="two">
+                <img src={image2}></img>
+              </div>
+              <div class="secundario" id="three">
+                <img src={image3}></img>
+              </div>
+            </div>
+          </Carousel>
         </Section>
         <Section>
           <div class="text">
@@ -71,6 +88,25 @@ export default function Home() {
             <Button style={"buttonPrimary"} texto={"SOLICITO SOPORTE"}></Button>
           </div>
         </Section>
+        {/* <Section> */}
+        <Section>
+          {/* <ProductsCarousel>
+            <div class="prueba">
+              <div class="principal ojo" id="pone">
+                <img src={image1}></img>
+              </div>
+              <div class="secundario" id="ptwo">
+                <img src={image2}></img>
+              </div>
+              <div class="secundario" id="pthree">
+                <img src={image3}></img>
+              </div>
+            </div>
+          </ProductsCarousel> */}
+          <h1>Lo Mejor En Electrodomesticos</h1>
+          <ProductList></ProductList>
+        </Section>
+        {/* </Section> */}
         <Section>
           <div class="propaganda">
             <div class="text">
@@ -168,24 +204,6 @@ export default function Home() {
               Visítanos, llámanos o escríbenos — ¡tu tranquilidad es nuestra
               prioridad!
             </p>
-          </div>
-          <div class="text">
-            <p>
-              <b>Dirección:</b> Cra 4 estadio # 30 - 63 Ibagué - Tolima.
-              <br />
-              <b>Horario: </b> Lunes a Viernes: 8:00 am - 12:00 pm y 2:00 pm -
-              6:00 pm.
-              <br />
-              <b>Sábados:</b> 8:00 am - 1:00pm
-              <br />
-              <b>Teléfono:</b> +57 (8) 264 7278
-              <br />
-              <b>Celular:</b> +57 316 2697417 - +57 317 5015387
-              <br />
-              <b>Email:</b> gerencia@sertelec.com
-              <br />
-            </p>
-            <Button style={"buttonPrimary"} texto={"NECESITO SOPORTE"}></Button>
           </div>
           <div class="image">
             <Map />

@@ -8,9 +8,26 @@ import { FaMapLocationDot } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer class="footer">
-      <figure>
-        <img src={banner} width={200}></img>
-      </figure>
+      <div>
+        <h2>ACERCATE A NUESTRAS OFICINAS</h2>
+
+        <p>
+          <b>Dirección:</b> Cra 4 estadio # 30 - 63 Ibagué - Tolima.
+          <br />
+          <b>Horario: </b> Lunes a Viernes: 8:00 am - 12:00 pm y 2:00 pm - 6:00
+          pm.
+          <br />
+          <b>Sábados:</b> 8:00 am - 1:00pm
+          <br />
+          <b>Teléfono:</b> +57 (8) 264 7278
+          <br />
+          <b>Celular:</b> +57 316 2697417 - +57 317 5015387
+          <br />
+          <b>Email:</b> gerencia@sertelec.com
+          <br />
+        </p>
+        {/* <Button style={"buttonPrimary"} texto={"NECESITO SOPORTE"}></Button> */}
+      </div>
       <div>
         <h2>CONTACTOS</h2>
         <ul>
@@ -67,14 +84,17 @@ export default function Footer() {
         <ul>
           <li>
             <FaPhoneSquareAlt size={30} />
-            <label>prueba@yopmail.com</label>
+            <a>prueba@yopmail.com</a>
           </li>
           <li>
             <FaMapLocationDot size={30} />
-            <label>prueba@yopmail.com</label>
+            <a>prueba@yopmail.com</a>
           </li>
         </ul>
       </div>
+      <figure>
+        <img src={banner} width={200}></img>
+      </figure>
     </footer>
   );
 }

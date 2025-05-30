@@ -1,6 +1,6 @@
 .buttonPrimary {
   /* Copy code to element you want to animate */
-  animation: customAni 3s ease 0s infinite normal none;
+  /* animation: customAni 3s ease 0s infinite normal none; */
   font-size: 14px;
   background: #1e87f0;
   color: white;
@@ -52,6 +52,15 @@
     97.37% 34.01%,
     92.97% 48.28%
   );
+}
+
+.buttonPrimary:hover {
+  background-color: #0170b9;
+}
+
+.buttonSecondary:hover {
+  background-color: whitesmoke;
+  color: #0170b9;
 }
 
 @keyframes customAni {

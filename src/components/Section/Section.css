@@ -10,7 +10,8 @@
   width: 100%;
 
   /* background-color: aquamarine; */
-  margin: 30px 30px;
+  /* margin: 0px 30px; */
+  margin-bottom: 30px;
 }
 
 .section .text {
@@ -179,6 +180,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .propaganda {
+    width: auto;
+    height: auto;
+    background-attachment: local;
+  }
+
+  .propaganda .text {
+    /* background-color: red; */
+    left: 0px;
+    background: #213547;
+    position: relative;
+    /* height: 100px; */
+    padding: 20px;
+    flex-direction: row;
+    transition: 3s;
+    margin-top: 60px;
   }
 }
 

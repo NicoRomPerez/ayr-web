@@ -7,6 +7,11 @@ import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 export default function Header() {
   const rutas = ["INICIO", "NOSOTROS", "PRODUCTOS", "SERVICIOS", "CONTACTO"];
 
+  const viweMenu = () => {
+    const elemento = document.getElementById("miElemento");
+    elemento.classList.toggle("activo"); // o toggle() para alternar
+  };
+
   const listItems = rutas.map((ele) => (
     <li>
       <HashLink activeClass="active" to={`/${ele}`}>
@@ -35,12 +40,16 @@ export default function Header() {
       </div>
       <div class="menu">
         <ul class="varela-round-regular">{listItems}</ul>
-        <label>
+        <button
+          onClick={() => {
+            viweMenu();
+          }}
+        >
           {" "}
           <IoMenu size={30}></IoMenu>{" "}
-        </label>
+        </button>
       </div>
-      <div class="socialMediaList">
+      <div class="socialMediaList" id="miElemento">
         <ul>
           <li>
             <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjr7fK-yOWLAxV1VTABHeIOPAYQPAgI">
