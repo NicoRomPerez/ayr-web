@@ -1,9 +1,9 @@
-import "../Button/Button.css"
+import "../Button/Button.css";
 
-export default function Button(props) {
-    return(
-        <button class={props.style}>
-            {props.texto}
-        </button>
-    )
+export default function Button({ onClick, texto, style }) {
+  return (
+    <button onClick={onClick} class={style}>
+      {texto}
+    </button>
+  );
 }

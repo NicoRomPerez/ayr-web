@@ -61,7 +61,7 @@ export default function Footer() {
         </ul>
       </div>
       <div>
-        <h2>ENLACES</h2>
+        <h2>REDES</h2>
         <div class="socialMediaList">
           <ul>
             <li>
@@ -81,14 +81,21 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+      <div>
+        <h2>ENLACES</h2>
         <ul>
           <li>
-            <FaPhoneSquareAlt size={30} />
-            <a>prueba@yopmail.com</a>
+            <a>Inicio</a>
           </li>
           <li>
-            <FaMapLocationDot size={30} />
-            <a>prueba@yopmail.com</a>
+            <a>Contacto</a>
+          </li>
+          <li>
+            <a>Nosotro</a>
+          </li>
+          <li>
+            <a>Servicios</a>
           </li>
         </ul>
       </div>

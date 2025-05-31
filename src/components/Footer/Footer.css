@@ -33,7 +33,7 @@
   padding: 0px;
   width: 30%;
   justify-content: space-around;
-  background: #7fffd438;
+  /* background: #7fffd438; */
   padding: 10px;
   border-radius: 10px;
 }
@@ -66,4 +66,12 @@
 }
 
 @media screen and (max-width: 780px) {
+  .footer {
+    justify-content: center;
+    /* padding: 10px; */
+  }
+
+  .footer div {
+    width: 80%;
+  }
 }

@@ -49,7 +49,10 @@ export default function Header() {
           <IoMenu size={30}></IoMenu>{" "}
         </button>
       </div>
-      <div class="socialMediaList" id="miElemento">
+      <div class="menu2" id="miElemento">
+        <ul class="varela-round-regular">{listItems}</ul>
+      </div>
+      <div class="socialMediaList">
         <ul>
           <li>
             <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjr7fK-yOWLAxV1VTABHeIOPAYQPAgI">

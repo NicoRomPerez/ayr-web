@@ -1,8 +1,17 @@
 import React from "react";
 import "../../components/Hero/Hero.css";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero(props) {
+  const navigate = useNavigate();
+  const mostrarMensaje = () => {
+    navigate("/SERVICIOS");
+  };
+
+  const mostrarMensaje2 = () => {
+    navigate("/PRODUCTOS");
+  };
   return (
     <>
       <div class="container" id="section1">
@@ -18,8 +27,16 @@ export default function Hero(props) {
             una atención técnica de calidad.
           </p>
           <div class="varela-round-regular">
-            <Button style={"buttonPrimary"} texto={"ver servicios"}></Button>
-            <Button style={"buttonSecondary"} texto={"ver productos"}></Button>
+            <Button
+              onClick={mostrarMensaje}
+              style={"buttonPrimary"}
+              texto={"ver servicios"}
+            ></Button>
+            <Button
+              onClick={mostrarMensaje2}
+              style={"buttonSecondary"}
+              texto={"ver productos"}
+            ></Button>
           </div>
         </div>
       </div>

@@ -197,7 +197,8 @@
     padding: 20px;
     flex-direction: row;
     transition: 3s;
-    margin-top: 60px;
+    margin-top: 80px;
+    height: auto;
   }
 }
 

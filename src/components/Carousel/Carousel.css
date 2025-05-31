@@ -65,10 +65,12 @@ section a {
   color: aquamarine;
   margin: 0px 10px;
   border-radius: 10%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 780px) {
   .prueba .principal {
+    margin-top: 20px;
     width: 100vw;
     height: auto;
     left: 0%;

@@ -1,6 +1,6 @@
 .tape {
   width: 90%;
-  margin: 20px;
+  margin: 40px 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -15,6 +15,10 @@
     aspect-ratio: 1;
     border-radius: 50%;
   }
+}
+
+.tape img {
+  object-fit: contain;
 }
 
 .tape img:hover {
@@ -34,5 +38,12 @@
   .section .text {
     /* background-color: aqua */
     width: 100%;
+  }
+
+  .tape img {
+    width: 100px;
+    margin: 0px 5px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
   }
 }
