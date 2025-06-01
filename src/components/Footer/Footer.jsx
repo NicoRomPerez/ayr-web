@@ -65,12 +65,15 @@ export default function Footer() {
         <div class="socialMediaList">
           <ul>
             <li>
-              <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjr7fK-yOWLAxV1VTABHeIOPAYQPAgI">
+              <a
+                href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjr7fK-yOWLAxV1VTABHeIOPAYQPAgI"
+                target="blank"
+              >
                 <FaLinkedin size={30} />
               </a>
             </li>
             <li>
-              <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjr7fK-yOWLAxV1VTABHeIOPAYQPAgI">
+              <a href="https://www.facebook.com/profile.php?id=100063633276014">
                 <FaFacebook size={30} />
               </a>
             </li>

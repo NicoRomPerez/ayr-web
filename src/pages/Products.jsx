@@ -8,7 +8,7 @@ export default function Products(second) {
       <Section>
         <Hero></Hero>
       </Section>
-      <h1>PRODUCTOS</h1>
+      <h1>Productos</h1>
     </RootLayout>
   );
 }

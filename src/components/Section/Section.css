@@ -156,6 +156,12 @@
   .section .text {
     width: 100%;
     padding: 0px 20px;
+    text-align: center;
+  }
+
+  .section .text p {
+    text-align: justify;
+    letter-spacing: 0.2px;
   }
 
   .section .image {
@@ -165,6 +171,7 @@
 
   .section .image img {
     width: 100%;
+    border-radius: 0%;
     /* background-color: brown; */
   }
 

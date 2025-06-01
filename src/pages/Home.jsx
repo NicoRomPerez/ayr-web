@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <RootLayout>
         {/* hero */}
-        <Hero></Hero>
+        <Hero hero={"inicio"}></Hero>
         {/* Marcas */}
         <Section>
           <div>
@@ -48,6 +48,7 @@ export default function Home() {
             </div>
           </Carousel>
         </Section>
+        {/* nosotros */}
         <Section>
           <div class="text">
             <h1>Quiénes Somos</h1>
@@ -90,19 +91,6 @@ export default function Home() {
         </Section>
         {/* <Section> */}
         <Section>
-          {/* <ProductsCarousel>
-            <div class="prueba">
-              <div class="principal ojo" id="pone">
-                <img src={image1}></img>
-              </div>
-              <div class="secundario" id="ptwo">
-                <img src={image2}></img>
-              </div>
-              <div class="secundario" id="pthree">
-                <img src={image3}></img>
-              </div>
-            </div>
-          </ProductsCarousel> */}
           <h1>Lo Mejor En Electrodomesticos</h1>
           <ProductList></ProductList>
         </Section>

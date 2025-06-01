@@ -11,12 +11,29 @@
       210deg,
       #1e87f0 0%,
       #88888852 50%,
-      #0170b9 100%
+      #213547 100%
     ),
     url(/src/assets/banner2.jpg);
   background-size: cover;
   background-position-y: center;
   background-attachment: fixed;
+}
+.container .heronico:hover {
+}
+
+.container .contacto {
+  background-image: linear-gradient(
+      210deg,
+      #f06b1e 0%,
+      #88888852 50%,
+      #213547 100%
+    ),
+    url(/src/assets/banner.jpg);
+  background-size: auto;
+  background-position-y: center;
+  background-attachment: local;
+  height: auto;
+  width: 100;
 }
 
 .container .heronico h1 {
