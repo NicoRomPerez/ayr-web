@@ -20,8 +20,13 @@ import Carousel from "../components/Carousel/Carousel";
 import Map from "../components/Map/Map";
 import ProductsCarousel from "../components/Carousel/ProductsCarousel";
 import ProductList from "../components/ProductList/ProductList";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+  const navegar = (ruta) => {
+    navigate(`/${ruta}`);
+  };
   return (
     <>
       <RootLayout>
@@ -59,7 +64,13 @@ export default function Home() {
               reparación de equipos electrónicos y electrodomésticos. Nuestro
               compromiso es brindarte soluciones confiables, rápidas y eficaces.
             </p>
-            <Button style={"buttonPrimary"} texto={"CONOCE MAS..."}></Button>
+            <Button
+              onClick={() => {
+                navegar("NOSOTROS");
+              }}
+              style={"buttonPrimary"}
+              texto={"CONOCE MAS..."}
+            ></Button>
           </div>
           <div class="image">
             <img width="420" src={nosotros} />
@@ -86,7 +97,13 @@ export default function Home() {
               <li>AIRES ACONDICIONADOS</li>
               <li>INSTALACIÓN DE SOPORTES DE PARED PARA TELEVISORES</li>
             </ul>
-            <Button style={"buttonPrimary"} texto={"SOLICITO SOPORTE"}></Button>
+            <Button
+              onClick={() => {
+                navegar("NOSOTROS");
+              }}
+              style={"buttonPrimary"}
+              texto={"SOLICITO SOPORTE"}
+            ></Button>
           </div>
         </Section>
         {/* <Section> */}

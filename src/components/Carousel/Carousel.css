@@ -80,4 +80,8 @@ section a {
     /* background-color: aqua */
     display: none;
   }
+
+  .prueba div img {
+    border-radius: 0%;
+  }
 }

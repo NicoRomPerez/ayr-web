@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { RiWhatsappLine } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -12,18 +13,18 @@ export default function Footer() {
         <h2>ACERCATE A NUESTRAS OFICINAS</h2>
 
         <p>
-          <b>Dirección:</b> Cra 4 estadio # 30 - 63 Ibagué - Tolima.
+          <b>Dirección:</b> Cra 4 estadio # 30 - 44 B/ Claret - Ibagué - Tolima.
           <br />
           <b>Horario: </b> Lunes a Viernes: 8:00 am - 12:00 pm y 2:00 pm - 6:00
           pm.
           <br />
           <b>Sábados:</b> 8:00 am - 1:00pm
           <br />
-          <b>Teléfono:</b> +57 (8) 264 7278
+          <b>Teléfono:</b> +57 (8) 516 2647
           <br />
-          <b>Celular:</b> +57 316 2697417 - +57 317 5015387
+          <b>Celular:</b> +57 321 5036571 - +57 3212261944
           <br />
-          <b>Email:</b> gerencia@sertelec.com
+          <b>Email:</b> ayrmultiservicios.ibague@gmail.com
           <br />
         </p>
         {/* <Button style={"buttonPrimary"} texto={"NECESITO SOPORTE"}></Button> */}
@@ -33,30 +34,20 @@ export default function Footer() {
         <ul>
           <li>
             <FaPhoneSquareAlt size={30} />
-            <label>+5731041071</label>
+            <label>+57 3212261944</label>
           </li>
           <li>
-            <FaPhoneSquareAlt size={30} />
-            <label>+5731041071</label>
-          </li>
-          <li>
-            <MdMarkEmailUnread size={30} />
-            <label>prueba@yopmail.com</label>
+            <RiWhatsappLine size={30} />
+            <label>+57 3215036571</label>
           </li>
           <li>
             <MdMarkEmailUnread size={30} />
-
-            <label>prueba@yopmail.com</label>
+            <label>ayrmultiservicios.ibague@gmail.com</label>
           </li>
           <li>
             <FaMapLocationDot size={30} />
 
-            <label>Cra 64-09 Ibagué-Colombia</label>
-          </li>
-          <li>
-            <FaMapLocationDot size={30} />
-
-            <label>Otro dato</label>
+            <label>Cra # 30 - 44 Claret-Ibagué-Tolima</label>
           </li>
         </ul>
       </div>
@@ -85,7 +76,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div>
+      {/* <div>
         <h2>ENLACES</h2>
         <ul>
           <li>
@@ -101,7 +92,7 @@ export default function Footer() {
             <a>Servicios</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <figure>
         <img src={banner} width={200}></img>
       </figure>
