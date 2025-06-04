@@ -30,13 +30,13 @@ export default function About(second) {
           <img width="500" src={banner1} />
         </div>
         <div class="text">
-          <h2>NUESTROS SERVICIOS</h2>
           <h1>Servicio Técnico Especializado para Electrodomésticos</h1>
           <p>
-            Centro de servicio autorizado Panasonic diagnostico, mantenimiento y
-            reparación de Televisores Equipos de Sonido Computadores Circuito
-            Cerrado Unidades Odontológicas Lavadoras Nevecones Secadoras
-            Calentadores de Agua Instalación de aires acondicionad.
+            Con más de 5 años de experiencia, brindamos Servicio Técnico
+            Especializado para Electrodomésticos, asegurando la mejor atención y
+            soluciones efectivas. Nuestro compromiso se refleja en la
+            satisfacción de cientos de clientes contentos que confían en nuestra
+            calidad y profesionalismo.
           </p>
         </div>
       </Section>

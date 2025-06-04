@@ -152,6 +152,20 @@
   /* transition-duration: 2s; */
 }
 
+.servicesSlider {
+  /* background-color: #213547; */
+  display: flex;
+  width: 90vw;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 50px;
+}
+
+.servicesSlider .image {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.23);
+  margin: 30px 0px;
+  border-radius: 10%;
+}
 @media screen and (max-width: 780px) {
   .section .text {
     width: 100%;
@@ -180,6 +194,7 @@
     flex-wrap: nowrap;
     height: auto;
     padding: 0px 20px;
+    text-align: left;
   }
 
   .row section {
@@ -206,6 +221,19 @@
     transition: 3s;
     margin-top: 80px;
     height: auto;
+  }
+
+  .servicesSlider {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow-y: scroll;
+    height: 200vw;
+  }
+
+  .servicesSlider .image img {
+    display: flex;
+    width: 100%;
   }
 }
 

@@ -4,6 +4,13 @@ import heronico from "../assets/logotipo.png";
 import banner1 from "../assets/banner1.png";
 import nosotros from "../assets/nosotros.jpg";
 import dispositivos from "../assets/dispositivos.png";
+import servicios1 from "../assets/services/service1.jpg";
+import servicios2 from "../assets/services/service2.jpg";
+import servicios3 from "../assets/services/service3.jpg";
+// import servicios4 from "../assets/services/service1.jpg";
+// import servicios5 from "../assets/services/service1.jpg";
+// import servicios6 from "../assets/services/service1.jpg";
+
 import Button from "../components/Button/Button";
 import Section from "../components/Section/Section";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -106,6 +113,29 @@ export default function Home() {
             ></Button>
           </div>
         </Section>
+        {/* servicios */}
+        <Section>
+          <div class="servicesSlider">
+            <div class="image">
+              <img width="350" src={servicios1} />
+            </div>
+            <div class="image">
+              <img width="350" src={servicios2} />
+            </div>
+            <div class="image">
+              <img width="350" src={servicios3} />
+            </div>
+            <div class="image">
+              <img width="350" src={servicios1} />
+            </div>
+            <div class="image">
+              <img
+                width="350"
+                src="https://scontent.fibe1-1.fna.fbcdn.net/v/t1.6435-9/130739976_111776110790279_1755275556658314741_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE7clhzP4KuQMd34_Bjb9sjn7T-z7503wOftP7PvnTfAzFP8F0nw_e34U9WU4A72dqvmspquqUG8SAGNP1uQuHV&_nc_ohc=yjyNjnSuS8cQ7kNvwEX__qZ&_nc_oc=AdkwMdncUlyBeUGXNTG0JkgpYsv_khuxtEXDGyth7jdzAlq1M5qWqtSkUPPzniAZXZg&_nc_zt=23&_nc_ht=scontent.fibe1-1.fna&_nc_gid=6HtFatwqfms46jUw_IMOkA&oh=00_AfIJj8toAb_Etwg0Ta88Iw6JbeDJbsO6aaOeJwzOxlgaVg&oe=686715CF"
+              />
+            </div>
+          </div>
+        </Section>
         {/* <Section> */}
         <Section>
           <h1>Lo Mejor En Electrodomesticos</h1>
@@ -129,13 +159,20 @@ export default function Home() {
         <Section>
           <div class="text">
             <h2>NUESTROS SERVICIOS</h2>
-            <h1>Servicio Técnico Especializado para Electrodomésticos</h1>
+            <h1>Tu Servicio Técnico Especializado de Confianza</h1>
             <p>
               Centro de servicio autorizado Panasonic diagnostico, mantenimiento
               y reparación de Televisores Equipos de Sonido Computadores
               Circuito Cerrado Unidades Odontológicas Lavadoras Nevecones
               Secadoras Calentadores de Agua Instalación de aires acondicionad.
             </p>
+            <Button
+              onClick={() => {
+                navegar("SERVICIOS");
+              }}
+              style={"buttonPrimary"}
+              texto={"CONOCE MAS..."}
+            ></Button>
           </div>
           <div class="image">
             <img width="500" src={banner1} />
@@ -146,7 +183,7 @@ export default function Home() {
           <div class="row">
             <div>
               <h2>SERVICIOS</h2>
-              <h1>Tu Servicio Técnico Especializado de Confianza</h1>
+              <h1>Cuenta con todos nuetros servicios</h1>
             </div>
             <section>
               <figure>
@@ -176,7 +213,10 @@ export default function Home() {
 
                 <figcaption>
                   <h3>Servicio a domicilo</h3>
-                  <p>Sus electrodomesticos seguros en nuestras manos</p>
+                  <p>
+                    Llevamos la solución hasta tu puerta. Atención rápida y
+                    profesional desde la comodidad de tu hogar.
+                  </p>
                 </figcaption>
               </figure>
               <figure>

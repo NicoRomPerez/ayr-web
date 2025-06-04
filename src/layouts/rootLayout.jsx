@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <Header />
       <main className="main">{children}</main>
       <a
-        href="https://wa.me/3204606193"
+        href="https://api.whatsapp.com/send?phone=3204606193&text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Este"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"

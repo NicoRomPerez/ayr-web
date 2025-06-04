@@ -77,8 +77,12 @@
   margin: 10px 0px;
 }
 
+.menu2 ul li a {
+  color: #f9f9f9;
+}
+
 .menu2 ul li:hover {
-  background-color: #f9f9f9;
+  background-color: #213547;
 }
 
 .menu2 ul li ul {
