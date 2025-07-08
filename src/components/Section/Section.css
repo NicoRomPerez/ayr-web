@@ -149,7 +149,7 @@
 }
 @media screen and (max-width: 780px) {
   .section .text {
-    width: 100%;
+    width: 100vw;
     padding: 0px 20px;
     text-align: center;
   }
