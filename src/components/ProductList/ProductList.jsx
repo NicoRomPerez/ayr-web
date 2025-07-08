@@ -12,7 +12,12 @@ export default function ProductList(second) {
           <div class="imageProduct">
             <img width="100" src={midea} />
 
-            <img src={dispositivos} width={300}></img>
+            <img
+              src={
+                "https://todofrio.com.co/wp-content/uploads/2023/08/16833_2.jpg"
+              }
+              width={300}
+            ></img>
           </div>
           <div class="infoProduct">
             <p>{ele.nombre}</p>

@@ -1,9 +1,15 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Tape from "../components/Tape/Tape";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "../layouts/rootLayout.css";
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />

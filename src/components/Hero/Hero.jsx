@@ -60,7 +60,7 @@ export default function Hero(props) {
   const HeroNosotros = () => {
     return (
       <div class="container" id="">
-        <div class="heronico contacto">
+        <div class="heronico nosotros">
           <p class="varela-round-regular">
             Confía en nuestro centro de servicio autorizado para una atención
             técnica de calidad.

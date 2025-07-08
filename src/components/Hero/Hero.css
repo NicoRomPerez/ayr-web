@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+}
+
 .container .heronico {
   display: flex;
   flex-direction: column;
@@ -9,16 +13,14 @@
   margin-top: 115px;
   background-image: linear-gradient(
       210deg,
-      #1e87f0 0%,
-      #88888852 50%,
+      #0170b9 0%,
+      #21354770 50%,
       #213547 100%
     ),
     url(/src/assets/banner2.jpg);
   background-size: cover;
   background-position-y: center;
   background-attachment: fixed;
-}
-.container .heronico:hover {
 }
 
 .container .contacto {
@@ -36,6 +38,25 @@
   width: 100;
 }
 
+.container .heronico p {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.container .heronico h1 {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.container .nosotros {
+  margin-top: 150px;
+  background-image: url(/src/assets/nosotros.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  border-radius: 10%;
+  /* height: 100%; */
+  width: 100%;
+  margin-bottom: 50px;
+}
 .container .heronico h1 {
   font-size: 3em;
   line-height: 1.2;
@@ -68,6 +89,18 @@
 
 .container .heronico a:hover {
   filter: drop-shadow(0 0 2em #01c38d);
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 780px) {

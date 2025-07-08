@@ -33,25 +33,6 @@
   animation-fill-mode: both;
 }
 
-.section .image {
-  /* border: solid red 1px; */
-  /* background-color: aquamarine; */
-  flex-wrap: wrap;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: show;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-
 .section div img {
   /* border: solid red 1px; */
   /* Copy code to element you want to animate */
@@ -179,12 +160,12 @@
   }
 
   .section .image {
-    width: 100%;
+    width: 100vw;
     /* background-color: brown; */
   }
 
   .section .image img {
-    width: 100%;
+    width: 100vw;
     border-radius: 0%;
     /* background-color: brown; */
   }
