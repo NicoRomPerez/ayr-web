@@ -1,9 +1,8 @@
 .buttonPrimary {
   /* Copy code to element you want to animate */
-  /* animation: customAni 3s ease 0s infinite normal none; */
   font-size: 14px;
   background: #1e87f0;
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 15px;
@@ -11,20 +10,34 @@
   border-style: solid #1e87f0;
   margin: 5px 10px;
   max-width: fit-content;
+  height: 40px;
 }
 
 .buttonSecondary {
   font-size: 14px;
   background: transparent;
-  color: #1e87f0;
+  color: aliceblue;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 15px;
   fill: var(--e-global-color-2653451c);
-  border: solid #1e87f0 2px;
+  border: solid aliceblue 2px;
   margin: 5px 10px;
+  height: 40px;
 }
 
+.buttonThirth {
+  font-size: 14px;
+  background: #88888891;
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+  fill: var(--e-global-color-2653451c);
+  border: solid aliceblue 2px;
+  margin: 5px 10px;
+  height: 40px;
+}
 .starburst {
   width: 200px; /* adjust to control the size */
   aspect-ratio: 1;
@@ -56,11 +69,14 @@
 
 .buttonPrimary:hover {
   background-color: #0170b9;
+  border: solid aliceblue 2px;
+  transform: scale(1.1);
 }
 
 .buttonSecondary:hover {
   background-color: whitesmoke;
   color: #0170b9;
+  transform: scale(1.1);
 }
 
 @keyframes customAni {

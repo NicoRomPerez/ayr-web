@@ -24,7 +24,7 @@ export default function ProductList(second) {
             <p>
               <b>${ele.precio_oferta}</b>
             </p>
-            <Button style={"buttonPrimary"} texto={"COTIZAR PRODUCTO"}></Button>
+            <Button style={"buttonThirth"} texto={"COTIZAR PRODUCTO"}></Button>
           </div>
         </div>
       ))}

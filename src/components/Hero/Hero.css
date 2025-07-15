@@ -1,8 +1,4 @@
-.container {
-  width: 100%;
-}
-
-.container .heronico {
+.inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,74 +17,104 @@
   background-size: cover;
   background-position-y: center;
   background-attachment: fixed;
+  margin-bottom: 30px;
 }
 
-.container .contacto {
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  height: 70vh;
+  padding: 50px;
+  margin-top: 115px;
   background-image: linear-gradient(
       210deg,
-      #f06b1e 0%,
-      #88888852 50%,
+      #0170b9 0%,
+      #21354770 50%,
       #213547 100%
     ),
-    url(/src/assets/banner.jpg);
-  background-size: auto;
+    url(https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?_gl=1*xxy4g9*_ga*MTAwNjkwNjY1Ni4xNzQ2MjUwOTU3*_ga_8JE65Q40S6*czE3NTIxNjUxNjAkbzUkZzEkdDE3NTIxNjU0MDQkajEwJGwwJGgw);
+  background-size: cover;
   background-position-y: center;
-  background-attachment: local;
-  height: auto;
-  width: 100;
+  background-attachment: fixed;
+  margin-bottom: 30px;
 }
 
-.container .heronico p {
-  animation: myAnim 2s ease 0s 1 normal forwards;
-}
-.container .heronico h1 {
-  animation: myAnim 2s ease 0s 1 normal forwards;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  height: 70vh;
+  padding: 50px;
+  margin-top: 115px;
+  background-image: linear-gradient(
+      210deg,
+      #0170b9 0%,
+      #21354770 50%,
+      #213547 100%
+    ),
+    url(https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?_gl=1*xxy4g9*_ga*MTAwNjkwNjY1Ni4xNzQ2MjUwOTU3*_ga_8JE65Q40S6*czE3NTIxNjUxNjAkbzUkZzEkdDE3NTIxNjU0MDQkajEwJGwwJGgw);
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+  width: -webkit-fill-available;
 }
 
-.container .nosotros {
-  margin-top: 150px;
-  background-image: url(/src/assets/nosotros.jpg);
-  background-size: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  border-radius: 10%;
-  /* height: 100%; */
-  width: 100%;
-  margin-bottom: 50px;
+.inicio p {
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
-.container .heronico h1 {
+.inicio h1 {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.inicio h1 {
   font-size: 3em;
   line-height: 1.2;
   width: 70%;
   color: aliceblue;
 }
 
-.container .heronico b {
+.inicio b {
   color: #1e87f0;
 }
 
-.container .heronicoimg img {
-  width: 25%;
-  position: absolute;
-  right: 20%;
-  top: 20%;
-  border-radius: 50%;
-}
-
-.container .heronico p {
+.inicio p {
   margin-bottom: 30px;
   color: aliceblue;
   width: 70%;
 }
 
-.container .heronico a {
+.inicio a {
   padding: 10px;
   border-radius: 5%;
 }
 
-.container .heronico a:hover {
+.inicio a:hover {
   filter: drop-shadow(0 0 2em #01c38d);
+}
+
+.nosotros p {
+  width: 40%;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+.nosotros h1 {
+  text-decoration: underline 8px;
+}
+
+.contacto p {
+  width: 40%;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+.contacto h1 {
+  text-decoration: underline 8px;
 }
 
 @keyframes myAnim {
@@ -104,7 +130,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  .container .heronico {
+  .inicio {
     /* width: 100%; */
     height: auto;
 
@@ -113,14 +139,18 @@
     text-align: left;
   }
 
-  .container .heronico h1 {
+  .inicio h1 {
     font-size: 2.2em;
     line-height: 1.2;
     width: 100%;
     color: aliceblue;
   }
 
-  .container .heronico p {
+  .inicio p {
+    width: 100%;
+  }
+
+  .nosotros p {
     width: 100%;
   }
 }

@@ -25,8 +25,14 @@ export default function Contact() {
               prioridad!
             </p>
           </div>
-          <div class="image">
-            <Map />
+          <div class="text">
+            <form class="form">
+              <input type="email" placeholder={"Email"}></input>
+              <input type="tel" placeholder={"Telefono"}></input>
+              <input type="text" placeholder={"Nombre"}></input>
+              <textarea placeholder={"Mensaje"}></textarea>
+              <button type="submit">Enviar</button>
+            </form>
           </div>
         </Section>
         <Section>

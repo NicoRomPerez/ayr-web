@@ -76,7 +76,7 @@ export default function Home() {
                 navegar("NOSOTROS");
               }}
               style={"buttonPrimary"}
-              texto={"CONOCE MAS..."}
+              texto={"CONOCE MAS SOBRE NOSOTROS..."}
             ></Button>
           </div>
           <div class="image">
@@ -129,10 +129,7 @@ export default function Home() {
               <img width="350" src={servicios1} />
             </div>
             <div class="image">
-              <img
-                width="350"
-                src="https://scontent.fibe1-1.fna.fbcdn.net/v/t1.6435-9/130739976_111776110790279_1755275556658314741_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE7clhzP4KuQMd34_Bjb9sjn7T-z7503wOftP7PvnTfAzFP8F0nw_e34U9WU4A72dqvmspquqUG8SAGNP1uQuHV&_nc_ohc=yjyNjnSuS8cQ7kNvwEX__qZ&_nc_oc=AdkwMdncUlyBeUGXNTG0JkgpYsv_khuxtEXDGyth7jdzAlq1M5qWqtSkUPPzniAZXZg&_nc_zt=23&_nc_ht=scontent.fibe1-1.fna&_nc_gid=6HtFatwqfms46jUw_IMOkA&oh=00_AfIJj8toAb_Etwg0Ta88Iw6JbeDJbsO6aaOeJwzOxlgaVg&oe=686715CF"
-              />
+              <img width="350" src={servicios1} />
             </div>
           </div>
         </Section>
@@ -140,6 +137,13 @@ export default function Home() {
         <Section>
           <h1>Lo Mejor En Electrodomesticos</h1>
           <ProductList></ProductList>
+          <Button
+            onClick={() => {
+              navegar("NOSOTROS");
+            }}
+            style={"buttonPrimary"}
+            texto={"VER MAS PRODUCTOS"}
+          ></Button>
         </Section>
         {/* </Section> */}
         <Section>

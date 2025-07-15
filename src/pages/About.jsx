@@ -14,14 +14,13 @@ export default function About(second) {
 
       <Section>
         <div class="text">
-          <h1>Quiénes Somos</h1>
           <h2>A & R Multiservicios</h2>
           <p>
             {/* En A & R Multiservicios somos un Centro de Servicio Autorizado
             Panasonic. Nos especializamos en diagnóstico, mantenimiento y
             reparación de equipos electrónicos y electrodomésticos. Nuestro
             compromiso es brindarte soluciones confiables, rápidas y eficaces. */}
-            En nuestra empresa contamos con{" "}
+            En A y R contamos con{" "}
             <b>
               más de 5 años de experiencia brindando soluciones integrales en
               climatización y aire acondicionado
@@ -30,34 +29,51 @@ export default function About(second) {
             hasta oficinas y espacios comerciales. Nos especializamos también en
             el diagnóstico, mantenimiento y reparación de equipos electrónicos y
             electrodomésticos como televisores, lavadoras, neveras y más.
-            <br></br>
-            <br></br> Nuestro compromiso con la calidad nos ha permitido{" "}
-            <b>
-              crecer y ofrecer nuestros servicios en distintas ciudades de
-              Colombia,
-            </b>
-            incluyendo Ibagué, Cali y Bogotá. Cada proyecto que emprendemos está
-            respaldado por un equipo técnico altamente capacitado, proveedores
-            confiables y un enfoque centrado en la satisfacción de nuestros
-            clientes.
           </p>
 
           {/* <Button style={"buttonSecondary"} texto={"CONOCE MAS..."}></Button> */}
         </div>
         <div class="image">
           <img width="420" src={nosotros} />
-          <img width="420" src={nosotros} />
+        </div>
+      </Section>
+
+      <Section>
+        <div class="text">
+          <h1>
+            “Somos el fabricante número uno de electrodomésticos en el mundo.”
+          </h1>
+        </div>
+        <div class="image">
           <img width="420" src={nosotros} />
         </div>
       </Section>
       <Section>
+        <div class="text">
+          <h2>Nuestra Misión Y Visión</h2>
+          <p>
+            Ofrecer servicios técnicos especializados en climatización y
+            reparación de electrodomésticos con altos estándares de calidad,
+            promoviendo el uso eficiente y responsable de los equipos mediante
+            la orientación y capacitación de nuestros clientes, y asegurando un
+            servicio oportuno, confiable y profesional.
+          </p>
+        </div>
         <div class="image">
-          <GrGrow size={250} />
+          <TbEyeStar size={200} />
+          <GrGrow size={200} />
+
+          {/* <img width="500" src={banner1} /> */}
+        </div>
+      </Section>
+      <Section>
+        <div class="image">
+          <GrGrow size={200} />
 
           {/* <img width="500" src={banner1} /> */}
         </div>
         <div class="text">
-          <h1>VISIÓN</h1>
+          <h2>VISIÓN</h2>
           <p>
             Ser una empresa líder a nivel nacional en soluciones de
             climatización y reparación de equipos electrónicos, reconocida por
@@ -66,22 +82,6 @@ export default function About(second) {
             recomendaciones de las marcas. Aspiramos a crecer sosteniblemente,
             expandiendo nuestra cobertura y fortaleciendo relaciones con los
             mejores proveedores del mercado.
-          </p>
-        </div>
-      </Section>
-      <Section>
-        <div class="image">
-          <TbEyeStar size={250} />
-          {/* <img width="500" src={banner1} /> */}
-        </div>
-        <div class="text">
-          <h1>MISIÓN</h1>
-          <p>
-            Ofrecer servicios técnicos especializados en climatización y
-            reparación de electrodomésticos con altos estándares de calidad,
-            promoviendo el uso eficiente y responsable de los equipos mediante
-            la orientación y capacitación de nuestros clientes, y asegurando un
-            servicio oportuno, confiable y profesional.
           </p>
         </div>
       </Section>
